@@ -184,10 +184,14 @@ function updateProgress() {
     document.getElementById('progressBar').style.width = progress + '%';
     document.getElementById('progressBar').textContent = Math.round(progress) + '%';
 
-    // Show a success message
-    if (progress >= 70) {
-        alert(" Congratulations! You're almost there!!");
-    }
+    // Show a success message based on the progress
+if (progress === 100) {
+    alert("Congratulations! You made it!!");
+} else if (progress >= 70) {
+    alert("Congratulations! You're almost there!!");
+}
+
+
 }
 // Function to handle image upload
 function handleImageUpload(event) {
