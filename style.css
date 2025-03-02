@@ -1,0 +1,460 @@
+/* General Styles  */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #d0e1fd, #f0e6ff); /* Soft blue & purple gradient */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p {
+    color: #333;
+    font-weight: bolder;
+    font-family: 'Caveat', cursive;
+}
+
+h1, h2 ,h3 {
+    color: #6a5acd; /* Pastel purple */
+}
+h4{
+   color: #a57ef5;
+   /*this is for the add tasks for day.. in the calander*/
+   
+} 
+a {
+    color: #6a5acd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9370db; /* Lighter purple */
+}
+
+/*  Navigation Bar  */
+nav {
+    background: linear-gradient(to right, #a87bdc, #6a5acd); /* Purple gradient */
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline; 
+    justify-content: space-around; 
+    align-items: center;
+}
+nav ul li{
+    display:inline;
+}
+/* Style the navigation links */
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: white;
+    color: #6a5acd;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    border: 2px solid #6a5acd;
+    text-decoration: none; 
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #6a5acd;
+    color: white;
+}
+ /* changes color when hovered over
+
+/*  Header  */
+header {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 80%;
+}
+
+/*  Calendar Styles  */
+#calendar-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+#calendar div {
+    padding: 10px;
+    background-color: #f0f8ff; /* Light blue */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#calendar div:hover {
+    background-color: #ffe44de3; /* Light orange */
+}
+
+
+/* Empty Cells */
+.day.empty {
+    background-color: transparent; /* Make empty cells invisible */
+    border: none; /* Remove borders */
+    cursor: default; /* Disable pointer events */
+}
+
+/* Current Day Highlight */
+.day.current-day {
+    background-color: #cce5ff; /* Light blue */
+    font-weight: bold;
+}
+
+/* Current Day Highlight */
+.day.current-day {
+    background-color: #cce5ff; /* Light blue */
+    font-weight: bold;
+}
+/*  Modal Styles  */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*  Task Styles  */
+.task-container {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+}
+
+.task {
+    font-size: 12px;
+    margin: 2px 0;
+    padding: 2px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task.checked {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.remove-task {
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.remove-task:hover {
+    color: rgb(255, 8, 0);
+}
+
+/*  Input & Button Styles  */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+textarea {
+    width: 300px; /* Initial width */
+    min-height: 50px; /* Minimum height */
+    max-height: 300px; /* Maximum height */
+    padding: 10px;
+    font-size: 16px;
+    resize: vertical; /* Allow expansion only vertically */
+    overflow: auto; /* Show scrollbar when max height is reached */
+  }
+  
+  input, textarea {
+    box-sizing: border-box; /* Ensures width includes padding and border */
+  }
+  
+  
+button {
+    background-color: #6a5acd; /* Pastel purple */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #9370db; /* Lighter purple */
+}
+
+/*  Progress Bar  */
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: #1abc9c; /* Pastel green */
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+
+
+/*  Responsive Design  */
+@media (max-width: 768px) {
+    #calendar {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/*  Quotes Section  */
+#quotes-list {
+    margin-top: 20px;
+}
+
+.quote {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-left: 5px solid #6a5acd;
+    margin: 10px 0;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2em;
+}
+/* Fade-In Image */ 
+.fade-in-image { animation: fadeIn 5s; }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  /* Motivation Page - Notebook-Style Textareas */
+.motivation-textarea {
+    background: linear-gradient(white 98%, rgba(0, 0, 0, 0.2) 99%);
+    background-size: 100% 30px; /* Lined paper effect */
+    border: none;
+    padding: 10px;
+    font-family: "Shadows Into Light", cursive; /* Handwritten style */
+    font-size: 18px;
+    line-height: 30px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    min-height: 100px;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+/*  Add focus effect */
+.motivation-textarea:focus {
+    border: 2px solid #a87bdc;
+    background-color: #fdf8e3;
+}
+
+
+/* Feedback Form Container */
+#feedback-form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label Styling */
+#feedback-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Style the drop-down box */
+#feedback-rating {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #a87bdc; /* Purple border */
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* Style the feedback text area */
+#feedback-comments {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #a87bdc;
+    background: white;
+    outline: none;
+    resize: none;
+}
+
+/*  Email/Password Textboxes  */
+form input[type="email"],
+form input[type="password"] {
+    width: 25%;
+    padding: 12px; /* Increased padding for better spacing */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 12px; /* More rounded corners */
+    font-size: 16px;
+    background-color: #f9f9f9; /* Softer background */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+/* Add focus effect for better interactivity */
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #6a5acd; /* Highlight border on focus */
+    box-shadow: 0 0 8px rgba(106, 90, 205, 0.3); /* Soft glow effect */
+}
+
+
+/*  Progress Section  */
+.progress {
+    background: white;
+    padding: 20px;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    margin: 20px auto;
+    max-width: 500px; /* Limit width for better readability */
+}
+
+.progress h2 {
+    color: #6a5acd; /* Pastel purple */
+    margin-bottom: 20px;
+}
+
+.progress-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between elements */
+}
+
+.progress-input label {
+    font-weight: 500; /* Slightly bolder text */
+    color: #555; /* Softer text color */
+}
+
+.progress-input input[type="number"] {
+    width: 100%;
+    padding: 12px; /* Increased padding for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 12px; /* More rounded corners */
+    font-size: 16px;
+    background-color: #f9f9f9; /* Softer background */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+/* Add focus effect for better interactivity */
+.progress-input input[type="number"]:focus {
+    border-color: #6a5acd; /* Highlight border on focus */
+    box-shadow: 0 0 8px rgba(106, 90, 205, 0.3); /* Soft glow effect */
+}
+
+.progress-input button {
+    background-color: #6a5acd; /* Pastel purple */
+    color: white;
+    padding: 12px 20px; /* Increased padding for better spacing */
+    border: none;
+    border-radius: 12px; /* More rounded corners */
+    font-size: 16px;
+    font-weight: 500; /* Slightly bolder text */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+.progress-input button:hover {
+    background-color: #9370db; /* Lighter purple */
+    transform: translateY(-2px); /* Slight lift on hover */
+}

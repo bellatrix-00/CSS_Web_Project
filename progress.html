@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="tasks.html"><i class="fa fa-tasks"></i> Tasks</a></li>
+            <li><a href="progress.html"><i class="fa fa-chart-line"></i> Progress</a></li>
+            <li><a href="motivation.html"><i class="fa fa-star"></i> Motivation</a></li>
+            <li><a href="feedback.html"><i class="fa fa-heart"></i> Feedback</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Track Your Progress <i class="fa fa-chart-line"style="font-size:60px;color:lightblue;"></i></h1>
+        <p>Keep an eye on how many tasks you’ve completed and stay motivated!
+            Aim for 70% a day !
+        </p>
+    </header>
+
+    <!-- Progress Section -->
+    <section class="progress">
+        <h2>Update Your Progress</h2>
+        <div class="progress-input">
+            <label for="totalTasks">Total Tasks:</label>
+            <input type="number" id="totalTasks" min="1" max="5" placeholder="Enter total tasks">
+            <label for="completedTasks">Completed Tasks:</label>
+            <input type="number" id="completedTasks" min="1" max="5" placeholder="Enter completed tasks">
+            <button onclick="updateProgress()">Update Progress</button>
+        </div>
+
+        <!-- Progress Bar Section -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">0%</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>2025 Gamified To-Do List | Stay Organized, Stay Motivated! <i class="fa fa-heart"style="font-size:30px;color:purple;"></i></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

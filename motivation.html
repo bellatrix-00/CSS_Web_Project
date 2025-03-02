@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Motivation</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="tasks.html"><i class="fa fa-tasks"></i> Tasks</a></li>
+                <li><a href="progress.html"><i class="fa fa-chart-line"></i> Progress</a></li>
+                <li><a href="motivation.html"><i class="fa fa-star"></i> Motivation</a></li>
+                <li><a href="feedback.html"><i class="fa fa-heart"></i> Feedback</a></li>
+            </ul>
+        </nav>
+    
+
+    <header>
+        <h1>Daily Motivation & Growth</h1>
+    </header>
+    <main>
+
+            <div class="fade-in-image"><img src="https://i.pinimg.com/736x/46/b0/08/46b0085e0b582573eecc105e14d21dc5.jpg" alt="Small Steps Everyday." width="600" height ="250" margin="right" ></div>
+        </section>
+        <h2>Why Stay Organized?</h2>
+        <!-- Section for "Why" -->
+        <section id="why-section">
+
+            <textarea class="motivation-textarea" placeholder="Why are you doing this? What is your long-term goal?"></textarea>
+        </section>
+
+        <!-- Section for Daily Intention -->
+        <section id="daily-intention">
+            <h2>Set Your Daily Intention</h2>
+            <textarea class="motivation-textarea" placeholder="Today, I intend to ___"></textarea>
+        </section>
+
+        <!-- Section for Reflection -->
+        <section id="reflection-section">
+            <h2>Daily Reflection</h2>
+            <div>
+                
+                <textarea class="motivation-textarea" placeholder="What went well today?"></textarea>
+            </div>
+            <div>
+                
+                <textarea class="motivation-textarea" placeholder="What could have gone better?"></textarea>
+            </div>
+        </section>
+
+        <!-- Section for Gratitude -->
+        <section id="gratitude-section">
+            <h2>Gratitude Journal</h2>
+            <textarea class="motivation-textarea" placeholder="What are you grateful for today?"></textarea>
+        </section>
+
+        <!-- Section for Inspirational Quotes -->
+        <section id="quotes-section">
+            <h2>Inspirational Quotes</h2>
+            <textarea class="motivation-textarea" placeholder="Add your favorite quote!"></textarea>
+            <p></p>
+            <button onclick="addQuote()">Add Quote</button>
+            <div id="quotes-list"></div>
+        </section>
+
+       
+
+        <!-- Section for Daily Check-in -->
+<section id="check-in-section">
+    <h2>Daily Check-in</h2>
+    <button onclick="saveDailyCheckin()">Save Today's Reflection</button>
+    <button onclick="clearData()">Clear All Data</button>
+</section>
+    </main>
+
+    <footer>
+        <p>2025 Gamified To-Do List | Stay Organized, Stay Motivated! <i class="fa fa-heart"style="font-size:30px;color:purple;"></i></p>
+        </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+        <body>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="tasks.html"><i class="fa fa-tasks"></i> Tasks</a></li>
+                    <li><a href="progress.html"><i class="fa fa-chart-line"></i> Progress</a></li>
+                    <li><a href="motivation.html"><i class="fa fa-star"></i> Motivation</a></li>
+                    <li><a href="feedback.html"><i class="fa fa-heart"></i> Feedback</a></li>
+                </ul>
+            </nav>
+        </body>
+
+    <header>
+        <h1>Calendar</h1>
+        <p>To add a task simply click on the day. To mark as complete press on it to strike-through.<p>
+         <p>   Optionally, you can also remove it by clicking "x".</p>
+        <h2 id="current-month-year"></h2>
+    </header>
+    
+    <main>
+        <div id="calendar"></div>
+    </main>
+    
+    <div id="calendar"></div>
+<div id="task-modal" class="modal">
+    <h4>Add Task for <span id="selected-date"></span></h4>
+    <textarea id="task-input" placeholder="Enter your task"></textarea>
+    <button onclick="saveTask()">Save</button>
+    <button onclick="closeModal()">Close</button>
+</div>
+    <footer>
+        <p>2025 Gamified To-Do List | Stay Organized, Stay Motivated! <i class="fa fa-heart"style="font-size:30px;color:purple;"></i></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
