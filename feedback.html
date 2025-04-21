@@ -3,58 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback & Notes</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!---this library will be used to display icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"><!---this library will be used to use indie-flowe font-->
+    <link rel="stylesheet" href="https://bellatrix-00.github.io/CSS_Web_Project/style.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="https://bellatrix-00.github.io/CSS_Web_Project/index.html"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="https://bellatrix-00.github.io/CSS_Web_Project/tasks.html"><i class="fa fa-tasks"></i> Tasks</a></li>
-            <li><a href="https://bellatrix-00.github.io/CSS_Web_Project/progress.html"><i class="fa fa-chart-line"></i> Progress</a></li>
-            <li><a href="https://bellatrix-00.github.io/CSS_Web_Project/motivation.html"><i class="fa fa-star"></i> Motivation</a></li>
-            <li><a href="https://bellatrix-00.github.io/CSS_Web_Project/feedback.html"><i class="fa fa-heart"></i> Feedback</a></li>
+            <li><a href="https://bellatrix-00.github.io/CSS_Web_Project/index.html"> Home</a></li>
+            <li><a href="https://bellatrix-00.github.io/CSS_Web_Project/tasks.html">Tasks</a></li>
+            <li><a href="https://bellatrix-00.github.io/CSS_Web_Project/progress.html">Progress</a></li>
+            <li><a href="https://bellatrix-00.github.io/CSS_Web_Project/motivation.html"></i> Motivation</a></li>
+            <li><a href="https://bellatrix-00.github.io/CSS_Web_Project/feedback.html">Feedback</a></li>
         </ul>
     </nav>
 </body>
-    
+
     <header>
-        <h1>Feedback & Notes</h1>
+        <h1>Calendar</h1>
+        <p>To add a task simply click on the day. To mark as complete press on it to strike-through.<p>
+         <p>   Optionally, you can also remove it by clicking "x".</p>
+        <h2 id="current-month-year"></h2>
     </header>
-
+    
     <main>
-        <section id="feedback">
-            <h2>Feedback Form</h2>
-            <form id="feedback-form">
-                <h2>Rate Us</h2>
-                <select id="feedback-rating">
-                    <option value="">-- Select a rating --</option>
-                    <option value="5">★★★★★ (Excellent)</option>
-                    <option value="4">★★★★☆ (Good)</option>
-                    <option value="3">★★★☆☆ (Average)</option>
-                    <option value="2">★★☆☆☆ (Needs Improvement)</option>
-                    <option value="1">★☆☆☆☆ (Poor)</option>
-                </select>
-            
-                <h2>Your Feedback</h2>
-                <textarea id="feedback-comments" placeholder="Share your thoughts..."></textarea>
-              
-                <h2>Bug Reports & Suggestions</h2>
-            <textarea id="feedback-comments" placeholder="Report any bugs or give suggestions here..."></textarea>
-            <button onclick="submitBugReport()">Submit</button>
-            </form>
-            
-
-          
-           
-        </section>
+        <div id="calendar"></div>
     </main>
-
+    
+    <div id="calendar"></div>
+<div id="task-modal" class="modal">
+    <h4>Add Task for <span id="selected-date"></span></h4>
+    <textarea id="task-input" placeholder="Enter your task"></textarea>
+    <button onclick="saveTask()">Save</button>
+    <button onclick="closeModal()">Close</button>
+</div>
     <footer>
         <p>2025 Gamified To-Do List | Stay Organized, Stay Motivated! <i class="fa fa-heart"style="font-size:30px;color:purple;"></i></p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="https://bellatrix-00.github.io/CSS_Web_Project/script.js"></script>
 </body>
 </html>
