@@ -2,6 +2,7 @@ http://localhost/phpmyadmin/index.php?route=/server/databases
 http://localhost/Project2/
 https://www.w3schools.com/howto/howto_js_full_page_tabs.asp - nav bar 
 https://www.behance.net/gallery/90219979/Todo-List/modules/521605207 - picture 
+https://www.w3schools.com/howto/howto_css_calendar.asp - calander
 Feedback table
 Sign User info
 the home page is redeisgned to give it the to-do list page because it wasnt clear before that it is a to-do list website so immeditly it pops up with tasks 
