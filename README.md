@@ -12,3 +12,4 @@ the progress page is renamed to collaborate to allow the users to join a discord
 
 
 https://youtu.be/Q-498CAa1xE?si=oWbBN9qC5M406aqQ Google Calendar API Tutorial | Connect Calendar With PHP | Display And Add Events | 2019
+https://youtu.be/itil1I1thPc?si=bTB2WXfGWm1ji6mf PHP Tutorial | Navigate To Next And Previous Week & And Get Dates Within Week
