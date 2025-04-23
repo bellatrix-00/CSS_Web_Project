@@ -10,3 +10,5 @@ the add button is conntencted to Jquery and Ajax and Mysql where the task is sto
 and also used jquaery to make the calander more realstic allowing the user to navigate to the prev and following months
 the progress page is renamed to collaborate to allow the users to join a discord study room 
 
+
+https://youtu.be/Q-498CAa1xE?si=oWbBN9qC5M406aqQ Google Calendar API Tutorial | Connect Calendar With PHP | Display And Add Events | 2019
