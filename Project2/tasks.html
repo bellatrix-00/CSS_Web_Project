@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Project2/index.php">Home</a></li>
+            <li><a href="/Project2/tasks.html">Tasks</a></li>
+            <li><a href="/Project2/progress.html">Progress</a></li>
+            <li><a href="/Project2/motivation.html">Motivation</a></li>
+            <li><a href="/Project2/feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <div class="calendar-nav" style="text-align: center; margin-bottom: 20px;">
+        <button onclick="changeMonth(-1)">&#10094; Previous</button>
+        <span id="current-month-year" style="margin: 0 20px;"></span>
+        <button onclick="changeMonth(1)">Next &#10095;</button>
+    </div>
+
+    <header>
+        <h1>Interactive Calendar</h1>
+        <p>To add a task, simply click on a day. To mark as complete, press on it to strike-through.</p>
+        <p>Optionally, you can remove it by clicking "x".</p>
+    </header>
+
+    <main>
+        <div id="calendar"></div>
+    </main>
+
+    <div id="task-modal" class="modal">
+        <h4>Add Task for <span id="selected-date"></span></h4>
+        <textarea id="task-input" placeholder="Enter your task"></textarea>
+        <button onclick="saveTask()">Save</button>
+        <button onclick="closeModal()">Close</button>
+    </div>
+
+    <footer>
+        <p>2025 Gamified To-Do List | Stay Organized, Stay Motivated! <i class="fa fa-heart" style="font-size:30px;color:purple;"></i></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

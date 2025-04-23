@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback & Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"><!---this library will be used to use indie-flowe font-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/Project2/index.php">Home</a></li>
+                <li> <a href="/Project2/tasks.html">Tasks</a></li>
+                <li> <a href="/Project2/progress.html">Progress</a></li>
+                <li> <a href="/Project2/motivation.html">Motivation</a></li>
+                 <li><a href="/Project2/feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </body>
+    
+    <header>
+        <h1>Feedback & Notes</h1>
+    </header>
+
+    <main>
+        <section id="feedback">
+            <h2>Feedback Form</h2>
+            <form id="feedback-form">
+                <h2>Rate Us</h2>
+                <select id="feedback-rating">
+                    <option value="">-- Select a rating --</option>
+                    <option value="5">★★★★★ (Excellent)</option>
+                    <option value="4">★★★★☆ (Good)</option>
+                    <option value="3">★★★☆☆ (Average)</option>
+                    <option value="2">★★☆☆☆ (Needs Improvement)</option>
+                    <option value="1">★☆☆☆☆ (Poor)</option>
+                </select>
+            
+                <h2>Your Feedback</h2>
+                <textarea id="feedback-comments" placeholder="Share your thoughts..."></textarea>
+                
+                <h2>Bug Reports & Suggestions</h2>
+            <textarea id="feedback-comments" placeholder="Report any bugs or give suggestions here..."></textarea>
+            <button onclick="submitBugReport()">Submit</button>
+            </form>
+            
+
+          
+           
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 Gamified To-Do List | Stay Organized, Stay Motivated! <i class="fa fa-heart"style="font-size:30px;color:purple;"></i></p>
+    </footer>
+    <script src="https://bellatrix-00.github.io/CSS_Web_Project/script.js"></script>
+</body>
+</html>
